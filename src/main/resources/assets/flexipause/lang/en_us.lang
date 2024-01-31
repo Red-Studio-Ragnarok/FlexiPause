@@ -1,0 +1,4 @@
+flexipause.general.client=Client
+flexipause.general.client.tooltip=Client configuration for FlexiPause
+
+flexipause.general.pauseoverrides=Pause Overrides

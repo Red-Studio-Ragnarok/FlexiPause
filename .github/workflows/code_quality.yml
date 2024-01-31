@@ -1,0 +1,14 @@
+name: Qodana
+
+on:
+  workflow_dispatch:
+
+jobs:
+  qodana:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Qodana Composite
+        uses: Red-Studio-Ragnarok/Qodana-Composite@main
+        with:
+          qodana_token: ${{ secrets.QODANA_TOKEN }}

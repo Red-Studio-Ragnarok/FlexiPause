@@ -1,0 +1,31 @@
+name: Feature Request
+description: File a feature request
+body:
+  - type: markdown
+    attributes:
+      value: Thanks for taking the time to fill out this feature request!
+  - type: textarea
+    id: description
+    attributes:
+      label: Describe the suggestion
+      description: |
+        Tell us what is the suggestion, also what did you want to happen?
+        And if possible tell us other solutions you considered.
+      placeholder: A clear and concise description of what the bug is.
+    validations:
+      required: true
+  - type: input
+    id: screenshots-and-or-videos
+    attributes:
+      label: Screenshots and/or videos
+      description: If applicable, add screenshots and/or videos to help explain your suggestion.
+    validations:
+      required: false
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Code of Conduct
+      description: By submitting this suggestion, you agree to follow our [Code of Conduct](https://github.com/Red-Studio-Ragnarok/Commons/blob/main/Ragnar%C3%B6k%20Code%20of%20Conduct.md)
+      options:
+        - label: I agree to follow this project's Code of Conduct
+          required: true
