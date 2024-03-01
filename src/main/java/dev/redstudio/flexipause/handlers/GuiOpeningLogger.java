@@ -19,6 +19,6 @@ public final class GuiOpeningLogger {
         final GuiScreen gui = guiOpenEvent.getGui();
 
         if (gui != null)
-            LOGGER.debug("Opened GUI: {}", gui.getClass().getName());
+            LOGGER.info("Opened GUI: {}", gui.getClass().getName());
     }
 }
