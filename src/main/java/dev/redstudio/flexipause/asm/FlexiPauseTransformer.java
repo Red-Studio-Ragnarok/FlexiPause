@@ -37,8 +37,6 @@ public final class FlexiPauseTransformer implements IClassTransformer {
         if (!pauseOverrides.containsKey(transformedName))
             return basicClass;
 
-        LOGGER.info("Transforming class: {}", transformedName);
-
         final ClassNode classNode = new ClassNode();
 
         new ClassReader(basicClass).accept(classNode, 0);
