@@ -20,7 +20,7 @@ Now open any GUI you want and its full reference will be logged for example `net
 Now add `net.minecraft.client.gui.inventory.GuiInventory:true` to the config.
 Its the reference we got previously with `:true` added at the end, this simply means that it will pause the game when opened, if it was false it would mean that it will not pause the game.
 
-![meme](https://github.com/Red-Studio-Ragnarok/FlexiPause/assets/82710983/7208ea8e-4b65-4ecd-925f-17161db6e0d3)
+![meme](https://github.com/Red-Studio-Ragnarok/FlexiPause/assets/82710983/4f990659-938c-4fc0-bc07-e13820513df7)
 
 ## FlexiPause® Commercial (2024) -- Luna Lage
 
