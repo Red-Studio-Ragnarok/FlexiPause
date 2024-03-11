@@ -40,8 +40,6 @@ You can also [buy me a hot chocolate].
 [Membership]: https://www.buymeacoffee.com/desoroxxx/membership
 [buy me a hot chocolate]: https://www.buymeacoffee.com/desoroxxx
 
-![Meme](https://github.com/Red-Studio-Ragnarok/FlexiPause/assets/82710983/4f990659-938c-4fc0-bc07-e13820513df7)
-
 # FlexiPause® Commercial (2024) -- Luna Lage
 
 *(This is a parody of the famous [Flex Tape commercial](https://youtu.be/0xzN6FM5x_E))*
@@ -83,3 +81,5 @@ Yee doggy!
 Just config, save, launch 'n tweak.
 
 Imagine everything you can do with the power of FlexiPause.
+
+![Meme](https://github.com/Red-Studio-Ragnarok/FlexiPause/assets/82710983/4f990659-938c-4fc0-bc07-e13820513df7)
