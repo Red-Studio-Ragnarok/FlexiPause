@@ -8,25 +8,45 @@
 [![Gradle](https://cdn.jsdelivr.net/npm/@intergrav/devins-badges@3/assets/cozy/built-with/gradle_vector.svg)](https://gradle.org/)
 [![Forge](https://cdn.jsdelivr.net/npm/@intergrav/devins-badges@3/assets/cozy/supported/forge_vector.svg)](http://files.minecraftforge.net/maven/net/minecraftforge/forge/index_1.12.2.html)
 
-# FlexiPause
+![Summary](https://www.bisecthosting.com/images/CF/FlexiPause/BH_SF_Summary.webp)
 
 FlexiPause allows you to easily change the pausing behavior of any GUI.
 
-## How to use
+![How To Use](https://www.bisecthosting.com/images/CF/FlexiPause/BH_SF_HowToUse.webp)
 
 To use it simply turn on the `Log Client GUI Opening` config option.
-Now open any GUI you want and its full reference will be logged for example `net.minecraft.client.gui.inventory.GuiInventory` for the player inventory.
+Now open any GUI you want, and its full reference will be logged for example `net.minecraft.client.gui.inventory.GuiInventory` for the player inventory.
 
 Now add `net.minecraft.client.gui.inventory.GuiInventory:true` to the config.
 Its the reference we got previously with `:true` added at the end, this simply means that it will pause the game when opened, if it was false it would mean that it will not pause the game.
 
-![meme](https://github.com/Red-Studio-Ragnarok/FlexiPause/assets/82710983/4f990659-938c-4fc0-bc07-e13820513df7)
+[![BisectHostingPromoBanner](https://www.bisecthosting.com/images/CF/FlexiPause/BH_SF_PromoCard.webp)](https://bisecthosting.com/Desoroxxx?r=FlexiPause+GitHub)
 
-## FlexiPause® Commercial (2024) -- Luna Lage
+# Want to have your own mod or support me?
+
+If you're looking for a mod but don't have the development skills or time, consider commissioning me!
+My commissions are currently open and I would be happy to create a custom mod to fit your needs as long as you provide assets.
+
+[Commissions]
+
+You can also support me on a monthly basis by becoming a member.
+To thank you will have the possibility to access exclusive post and messages, Discord channel for WIP content, and even access to unreleased Prototypes or WIP Projects.
+
+[Membership]
+
+You can also [buy me a hot chocolate].
+
+[Commissions]: https://www.buymeacoffee.com/desoroxxx/commissions
+[Membership]: https://www.buymeacoffee.com/desoroxxx/membership
+[buy me a hot chocolate]: https://www.buymeacoffee.com/desoroxxx
+
+![Meme](https://github.com/Red-Studio-Ragnarok/FlexiPause/assets/82710983/4f990659-938c-4fc0-bc07-e13820513df7)
+
+# FlexiPause® Commercial (2024) -- Luna Lage
 
 *(This is a parody of the famous [Flex Tape commercial](https://youtu.be/0xzN6FM5x_E))*
 
-Hi, Luna Lage here for FlexiPause. 
+Hi, Luna Lage here for FlexiPause.
 The super-simple, tweaker mod, *(tweaking noise)* that can instantly config, tweak, pause, and unpause.
 
 FlexiPause is no ordinary tweaker mod.
@@ -63,23 +83,3 @@ Yee doggy!
 Just config, save, launch 'n tweak.
 
 Imagine everything you can do with the power of FlexiPause.
-
-[![BisectHostingPromoBanner](https://www.bisecthosting.com/partners/custom-banners/d410513a-9aee-467a-96eb-88eb0976af9d.webp)](https://bisecthosting.com/Desoroxxx?r=FlexiPause+GitHub)
-
-# Want to have your own mod or support me?
-
-If you're looking for a mod but don't have the development skills or time, consider commissioning me!
-My commissions are currently open and I would be happy to create a custom mod to fit your needs as long as you provide assets.
-
-[Commissions]
-
-You can also support me on a monthly basis by becoming a member.
-To thank you will have the possibility to access exclusive post and messages, Discord channel for WIP content, and even access to unreleased Prototypes or WIP Projects.
-
-[Membership]
-
-You can also [buy me a hot chocolate].
-
-[Commissions]: https://www.buymeacoffee.com/desoroxxx/commissions
-[Membership]: https://www.buymeacoffee.com/desoroxxx/membership
-[buy me a hot chocolate]: https://www.buymeacoffee.com/desoroxxx
