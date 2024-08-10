@@ -12,6 +12,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 - Updated [org.jetbrains.gradle.plugin.idea-ext](https://plugins.gradle.org/plugin/org.jetbrains.gradle.plugin.idea-ext) 1.1.8
 - Updated [io.freefair.lombok](https://plugins.gradle.org/plugin/io.freefair.lombok) 8.7.1
 - Updated to [Gradle](https://gradle.org) 8.10-rc-1
+- Set a minimum Gradle Daemon JVM version requirement
 
 ## FlexiPause Version 1.1 Changelog - 2024-03-11
 
