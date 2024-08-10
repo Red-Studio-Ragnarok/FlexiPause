@@ -12,7 +12,7 @@ and this project follows the [Ragnarök Versioning Convention](https://github.co
 - Updated [gradle-buildconfig-plugin](https://github.com/gmazzo/gradle-buildconfig-plugin) 5.4.0
 - Updated [org.jetbrains.gradle.plugin.idea-ext](https://plugins.gradle.org/plugin/org.jetbrains.gradle.plugin.idea-ext) 1.1.8
 - Updated [io.freefair.lombok](https://plugins.gradle.org/plugin/io.freefair.lombok) 8.7.1
-- Updated to [Gradle](https://gradle.org) 8.10-rc-1
+- Updated to [Gradle](https://gradle.org) 8.8
 - Updated [RetroFuturaGradle](https://github.com/GTNewHorizons/RetroFuturaGradle) 1.4.1
 - Set a minimum Gradle Daemon JVM version requirement
 - Switched to the new standard `gradle.properties`
