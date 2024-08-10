@@ -11,17 +11,18 @@ plugins {
 }
 
 group = "dev.redstudio"
-version = "1.1" // Versioning must follow Ragnarök versioning convention: https://github.com/Red-Studio-Ragnarok/Commons/blob/main/Ragnar%C3%B6k%20Versioning%20Convention.md
+version = "1.2-Dev-1" // Versioning must follow Ragnarök versioning convention: https://github.com/Red-Studio-Ragnarok/Commons/blob/main/Ragnar%C3%B6k%20Versioning%20Convention.md
 
+val realName = "FlexiPause"
 val id = "flexipause"
-val plugin = "asm.FlexiPausePlugin"
+val plugin = "${project.group}.${id}.asm.${realName}Plugin"
 
-val configanytimeVersion = "1.0"
+val configanytimeVersion = "3.0"
 
 minecraft {
     mcVersion = "1.12.2"
     username = "Desoroxxx"
-    extraRunJvmArguments = listOf("-Dforge.logging.console.level=debug", "-Dfml.coreMods.load=${project.group}.${id}.${plugin}")
+    extraRunJvmArguments = listOf("-Dforge.logging.console.level=debug", "-Dfml.coreMods.load=${plugin}")
 }
 
 repositories {
@@ -38,11 +39,11 @@ dependencies {
 buildConfig {
     packageName("${project.group}.${id}")
     className("ProjectConstants")
-    documentation.set("This class defines constants for FlexiPause.\n<p>\nThey are automatically updated by Gradle")
+    documentation.set("This class defines constants for ${realName}.\n<p>\nThey are automatically updated by Gradle.")
 
     useJavaOutput()
     buildConfigField("String", "ID", provider { """"${id}"""" })
-    buildConfigField("String", "NAME", "\"FlexiPause\"")
+    buildConfigField("String", "NAME", provider { """"${realName}"""" })
     buildConfigField("String", "VERSION", provider { """"${project.version}"""" })
     buildConfigField("org.apache.logging.log4j.Logger", "LOGGER", "org.apache.logging.log4j.LogManager.getLogger(NAME)")
 }
@@ -107,7 +108,7 @@ tasks.named<Jar>("jar") {
     manifest {
         attributes(
             "ModSide" to "BOTH",
-            "FMLCorePlugin" to "${project.group}.${id}.${plugin}",
+            "FMLCorePlugin" to plugin,
             "FMLCorePluginContainsFMLMod" to "true",
             "ForceLoadAsMod" to "true"
         )

@@ -15,6 +15,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 - Updated [RetroFuturaGradle](https://github.com/GTNewHorizons/RetroFuturaGradle) 1.4.1
 - Set a minimum Gradle Daemon JVM version requirement
 - Switched to the new standard `gradle.properties`
+- Updated the buildscript
 
 ## FlexiPause Version 1.1 Changelog - 2024-03-11
 
