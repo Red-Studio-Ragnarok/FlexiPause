@@ -20,7 +20,7 @@ val plugin = "${project.group}.${id}.asm.${realName}Plugin"
 val configanytimeVersion = "3.0"
 
 minecraft {
-    mcVersion = "1.12.2"
+    mcVersion = "1.7.10"
     username = "Desoroxxx"
     extraRunJvmArguments = listOf("-Dforge.logging.console.level=debug", "-Dfml.coreMods.load=${plugin}")
 }

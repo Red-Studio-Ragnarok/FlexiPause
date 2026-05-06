@@ -3,7 +3,6 @@ package dev.redstudio.flexipause.asm;
 import dev.redstudio.flexipause.config.FlexiPauseConfig;
 import net.minecraft.client.gui.GuiScreen;
 import net.minecraft.launchwrapper.IClassTransformer;
-import net.minecraftforge.fml.relauncher.FMLLaunchHandler;
 import org.objectweb.asm.ClassReader;
 import org.objectweb.asm.ClassWriter;
 import org.objectweb.asm.Opcodes;
@@ -27,7 +26,7 @@ import static dev.redstudio.flexipause.ProjectConstants.LOGGER;
  */
 public final class FlexiPauseTransformer implements IClassTransformer {
 
-    private static final String MCP_OR_NOTCH_METHOD_NAME = FMLLaunchHandler.isDeobfuscatedEnvironment() ? "doesGuiPauseGame" : "d";
+    private static final String MCP_OR_NOTCH_METHOD_NAME = !FlexiPausePlugin.isObfuscated ? "doesGuiPauseGame" : "d";
     private static final String SEARGE_METHOD_NAME =  "func_73868_f";
 
     private static Map<String, Boolean> pauseOverrides;

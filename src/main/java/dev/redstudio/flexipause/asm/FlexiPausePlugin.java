@@ -1,15 +1,17 @@
 package dev.redstudio.flexipause.asm;
 
-import net.minecraftforge.fml.relauncher.IFMLLoadingPlugin;
+import cpw.mods.fml.relauncher.IFMLLoadingPlugin;
 
 import java.util.Map;
 
 import static dev.redstudio.flexipause.ProjectConstants.LOGGER;
 
 @IFMLLoadingPlugin.Name("FlexiPause Plugin")
-@IFMLLoadingPlugin.MCVersion("1.12.2")
+@IFMLLoadingPlugin.MCVersion("1.7.10")
 @IFMLLoadingPlugin.TransformerExclusions({"dev.redstudio.flexipause.asm", "dev.redstudio.flexipause.config"})
 public final class FlexiPausePlugin implements IFMLLoadingPlugin {
+
+    public static boolean isObfuscated = true;
 
     public FlexiPausePlugin() {
         LOGGER.info("Initializing FlexiPause Plugin");
@@ -34,6 +36,7 @@ public final class FlexiPausePlugin implements IFMLLoadingPlugin {
 
     @Override
     public void injectData(final Map<String, Object> data) {
+        isObfuscated = (Boolean) data.get("runtimeDeobfuscationEnabled");
     }
 
     @Override

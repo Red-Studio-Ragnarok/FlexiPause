@@ -1,15 +1,12 @@
 package dev.redstudio.flexipause.config;
 
 import com.cleanroommc.configanytime.ConfigAnytime;
+import cpw.mods.fml.client.event.ConfigChangedEvent;
+import cpw.mods.fml.common.FMLCommonHandler;
+import cpw.mods.fml.common.eventhandler.SubscribeEvent;
+import cpw.mods.fml.relauncher.Side;
+import cpw.mods.fml.relauncher.SideOnly;
 import dev.redstudio.flexipause.FlexiPause;
-import net.minecraftforge.common.config.Config;
-import net.minecraftforge.common.config.ConfigManager;
-import net.minecraftforge.fml.client.event.ConfigChangedEvent;
-import net.minecraftforge.fml.common.FMLCommonHandler;
-import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
-import net.minecraftforge.fml.relauncher.Side;
-import net.minecraftforge.fml.relauncher.SideOnly;
 
 import static dev.redstudio.flexipause.ProjectConstants.ID;
 import static dev.redstudio.flexipause.ProjectConstants.NAME;
@@ -52,7 +49,7 @@ public final class FlexiPauseConfig {
 
         @SubscribeEvent
         public static void onConfigChanged(final ConfigChangedEvent.OnConfigChangedEvent onConfigChangedEvent) {
-            if (!onConfigChangedEvent.getModID().equals(ID))
+            if (!onConfigChangedEvent.modID.equals(ID))
                 return;
 
             ConfigManager.sync(ID, Config.Type.INSTANCE);
